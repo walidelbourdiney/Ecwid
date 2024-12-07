@@ -30,9 +30,7 @@ h6 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
-  backdrop-filter: blur(20px) saturate(109%);
-  -webkit-backdrop-filter: blur(20px) saturate(109%);
-  background-color: rgba(154, 151, 151, 0.06);
+
   margin-bottom: 10px;
   border-radius: 10px;
 }
@@ -105,6 +103,9 @@ body > nav > div.right.flex > button {
   width: 80%;
   margin: 40px auto;
   text-align: center;
+}
+body > div.first > p:nth-child(2) {
+  margin-bottom: 1rem;
 }
 .first button {
   padding: 10px 40px;
@@ -197,6 +198,7 @@ body > div.second > .secondInfo .pair {
 }
 
 .third .social h2,
+.third .social h4,
 .fiveth .social h4 {
   margin-bottom: 5px;
   padding: 0;
@@ -246,4 +248,18 @@ body > div.fiveth.container.flex > div.fiveth-right {
 }
 .sixth {
   background-color: var(--accent-color);
+}
+body > div:nth-child(8) > div.third-right > img {
+  border-color: var(--info-color);
+}
+body > div:nth-child(8) > div.third-left > button {
+  background-color: var(--info-color);
+  color: aliceblue;
+}
+body > div:nth-child(8) > div.third-left > button:hover {
+  background-color: darkblue;
+}
+body > div:nth-child(9) {
+  background-color: var(--info-color);
+  color: aliceblue;
 }
