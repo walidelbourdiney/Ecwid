@@ -11,7 +11,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", "Poppins", sans-serif;
+
   line-height: 1.5;
   color: black;
   background-color: #f9f9f9;
@@ -23,11 +24,8 @@ h4,
 h5,
 h6 {
   font-weight: bolder;
-  margin-bottom: 1rem;
 }
-p {
-  margin-bottom: 1rem;
-}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -82,7 +80,7 @@ span {
   margin-right: 5px;
 }
 .logo .brandName {
-  transform: translateY(5px);
+  margin-right: 5px;
 }
 ul > li {
   margin: 0 5px;
@@ -94,6 +92,9 @@ body > nav {
   width: 90%;
   justify-content: space-around;
   margin: auto;
+}
+body > nav > div.right.flex > button {
+  margin-left: 5px;
 }
 .first {
   width: 80%;
@@ -155,7 +156,7 @@ body > div.second > .secondInfo .pair {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-
+  margin-top: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -194,4 +195,25 @@ body > div.second > .secondInfo .pair {
 .third .third-right img {
   border-radius: 10px;
   border: 2px solid var(--secondary-color);
+}
+.fourth {
+  width: 70%;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  border: 1px black solid;
+  padding: 30px;
+}
+.fourth-bottom {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.fourth-bottom .bottom-left img {
+  border-radius: 50%;
+  border: 0.5px black solid;
+  margin-right: 10px;
+}
+body > div.fourth.container > div > div.botom-right.flex > img {
+  margin-left: 10px;
 }
