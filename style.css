@@ -35,7 +35,7 @@ p {
 }
 .flex {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 .grid {
@@ -120,19 +120,26 @@ body > div.second > div > div > div img {
   margin-right: 2px;
 }
 .second {
-  width: 70%;
-  margin: 0px auto;
-}
-body > div.second > div {
-  justify-content: space-between;
-  gap: 5px;
-}
-body > div.second > img {
   width: 80%;
+}
+
+body > div.second > img {
+  display: block;
+  width: 80%;
+  margin: 5px auto;
+  border-radius: 10px;
+  border: 2px solid var(--warning-color);
+}
+body > div.second > .secondInfo {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  padding: 10px 20px;
   margin: auto;
-  transform: translateX(20px);
 }
 body > div.second > div > div p {
   font-size: 0.7rem;
-  margin-top: 0;
+}
+body > div.second > .secondInfo .pair {
+  margin: 5px auto;
+  width: auto;
 }
