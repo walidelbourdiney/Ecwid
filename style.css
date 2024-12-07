@@ -59,7 +59,7 @@ button {
   background-color: black;
 }
 button:hover {
-  background-color: var(--warning-color);
+  background-color: var(--primary-color);
   color: black;
 }
 ul {
@@ -142,4 +142,56 @@ body > div.second > div > div p {
 body > div.second > .secondInfo .pair {
   margin: 5px auto;
   width: auto;
+}
+.third {
+  flex-direction: row;
+}
+
+.third button {
+  background-color: var(--secondary-color);
+  color: black;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Space between text and arrow */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.learn-more:hover {
+  background-color: #e0975c;
+}
+.learn-more .arrow {
+  font-weight: normal;
+  transition: transform 0.3s ease;
+}
+.learn-more:hover .arrow {
+  transform: translateX(5px); /* Moves the arrow slightly on hover */
+}
+.third .third-socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.third .social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align everything to the left */
+}
+
+.third .social h2 {
+  margin-bottom: 5px;
+  padding: 0;
+}
+.third .third-right img {
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
 }
