@@ -148,11 +148,13 @@ body > div.second > .secondInfo .pair {
   margin: 5px auto;
   width: auto;
 }
-.third {
+.third,
+.fiveth {
   flex-direction: row;
 }
 
-.third button {
+.third button,
+.fiveth button {
   background-color: var(--secondary-color);
   color: black;
   border: 1px solid black;
@@ -179,45 +181,69 @@ body > div.second > .secondInfo .pair {
 .learn-more:hover .arrow {
   transform: translateX(5px); /* Moves the arrow slightly on hover */
 }
-.third .third-socials {
+.third .third-socials,
+.fiveth .fiveth-socials {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
 }
 
-.third .social {
+.third .social,
+.fiveth .social {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align everything to the left */
 }
 
-.third .social h2 {
+.third .social h2,
+.fiveth .social h4 {
   margin-bottom: 5px;
   padding: 0;
 }
-.third .third-right img {
+.third .third-right img,
+.fiveth .fiveth-left img {
   border-radius: 10px;
   border: 2px solid var(--secondary-color);
 }
-.fourth {
+.fourth,
+.sixth {
   width: 70%;
   background-color: var(--secondary-color);
   border-radius: 30px;
   border: 1px black solid;
   padding: 30px;
 }
-.fourth-bottom {
+.fourth-bottom,
+.sixth-bottom {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
 }
-.fourth-bottom .bottom-left img {
-  border-radius: 50%;
-  border: 0.5px black solid;
+.fourth-bottom .bottom-left img,
+.sixth-bottom .bottom-right img {
   margin-right: 10px;
 }
-body > div.fourth.container > div > div.botom-right.flex > img {
+body > div.fourth.container > div > div.botom-right.flex > img,
+body > div.sixth.container > div > div.botom-left.flex > img {
   margin-left: 10px;
+}
+.fiveth .social > * {
+  align-items: flex-end;
+}
+body > div.fiveth.container.flex > div.fiveth-right {
+  margin-left: 20px;
+}
+.fiveth .fiveth-left img {
+  border: 2px solid var(--accent-color);
+}
+.fiveth button {
+  background-color: var(--accent-color);
+}
+.fiveth button:hover {
+  background-color: #4dbd81;
+}
+.sixth {
+  background-color: var(--accent-color);
 }
