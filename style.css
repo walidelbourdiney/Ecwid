@@ -15,7 +15,7 @@ body {
 
   line-height: 1.5;
   color: black;
-  background-color: #fdf7c4;
+  background-color: #ffffff;
 }
 h1,
 h2,
@@ -36,7 +36,7 @@ h6 {
 }
 .flex {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .grid {
@@ -262,4 +262,44 @@ body > div:nth-child(8) > div.third-left > button:hover {
 body > div:nth-child(9) {
   background-color: var(--info-color);
   color: aliceblue;
+}
+.global {
+  justify-content: space-between;
+  border: 2px black solid;
+  border-radius: 30px;
+  margin-top: 50px;
+  background: url("undraw_World_re_768g.png") no-repeat center center / contain;
+  padding: 30px;
+  position: relative;
+}
+.global-right {
+  justify-content: space-around;
+  width: 40%;
+  /* margin-left: 10px; */
+}
+.global-left {
+  width: 40%;
+}
+.global-left h2 {
+  margin-bottom: 1rem;
+}
+.global-right h2 {
+  font-size: 3rem;
+}
+.global-right .numberss {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: lighter;
+  transform: translateY(-20px);
+}
+
+body > div.global.container.flex > div.global-right.flex > div > p {
+  font-size: smaller;
+  text-align: center;
+}
+.global #arrow {
+  position: absolute;
+  top: -30px;
+  right: 100px;
+  transform: rotate(-135deg);
 }
