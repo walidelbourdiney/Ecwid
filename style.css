@@ -227,6 +227,9 @@ body > div.second > .secondInfo .pair {
 .sixth-bottom .bottom-right img {
   margin-right: 10px;
 }
+body > div.sixth.container > div > div.bottom-left.flex > img {
+  margin-left: 10px;
+}
 body > div.fourth.container > div > div.botom-right.flex > img,
 body > div.sixth.container > div > div.botom-left.flex > img {
   margin-left: 10px;
