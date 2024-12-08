@@ -339,7 +339,7 @@ body > div.options.flex.container > div > a:hover > span {
     "logo sell-online product- for-you partner empty" 1fr
     ". company support latest . ." 1fr
     / 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 8px;
+  gap: 15px;
   background-color: #000000;
   color: #808080;
   padding: 20px;
@@ -366,7 +366,6 @@ body > div.options.flex.container > div > a:hover > span {
 .logo {
   grid-area: 1/1/2/2;
   align-items: flex-start;
-  color: #d3d3d3;
 }
 .sell-online {
   grid-area: 1/2/2/3;
@@ -391,4 +390,7 @@ body > div.options.flex.container > div > a:hover > span {
 }
 .latest {
   grid-area: 2/4/3/6;
+}
+.layout .logo {
+  color: #d3d3d3;
 }
