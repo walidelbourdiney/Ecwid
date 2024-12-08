@@ -339,14 +339,16 @@ body > div.options.flex.container > div > a:hover > span {
     "logo sell-online product- for-you partner empty" 1fr
     ". company support latest . ." 1fr
     / 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 15px;
+  gap: 40px;
   background-color: #000000;
   color: #808080;
   padding: 20px;
   width: 80%;
   margin: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .layout a {
   color: #808080;
@@ -393,4 +395,35 @@ body > div.options.flex.container > div > a:hover > span {
 }
 .layout .logo {
   color: #d3d3d3;
+}
+.footer-2 {
+  background-color: #000000;
+}
+body > footer > section.footer-2.flex {
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.footer-2 {
+  padding: 30px;
+}
+.footer-2 .search-bar input {
+  width: 20em;
+  height: 1.5rem;
+  border-radius: 5px;
+}
+
+.footer-2 .search-bar button {
+  transition: transform 0.3 ease-in-out;
+}
+.footer-2 .search-bar button:hover {
+  background-color: #d3d3d3;
+}
+.footer-2 .social-and-apps .social-icons a {
+  margin-inline: 5px;
+}
+.footer-2 .social-and-apps .social-icons a:hover {
+  text-decoration: none;
 }
