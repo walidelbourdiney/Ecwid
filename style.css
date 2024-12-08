@@ -427,3 +427,124 @@ body > footer > section.footer-2.flex {
 .footer-2 .social-and-apps .social-icons a:hover {
   text-decoration: none;
 }
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  body > nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .first {
+    width: 90%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  body > div.second > .secondInfo {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .global {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .global-right,
+  .global-left {
+    width: 100%;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-2 {
+    text-align: center;
+  }
+
+  .footer-2 .search-bar input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 992px) */
+@media (min-width: 600px) and (max-width: 992px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .first {
+    width: 85%;
+    text-align: center;
+  }
+
+  .third,
+  .fiveth {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .third-socials,
+  .fiveth-socials {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .global {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .global-right,
+  .global-left {
+    width: 48%;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/* Large devices (desktops, more than 992px) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  body > nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .global {
+    flex-direction: row;
+  }
+
+  .global-right,
+  .global-left {
+    width: 45%;
+  }
+}
