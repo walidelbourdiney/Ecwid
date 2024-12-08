@@ -333,3 +333,62 @@ body > div.options.flex.container > div > a:hover > span {
 .options img {
   margin-bottom: 10px;
 }
+.layout {
+  display: grid;
+  grid:
+    "logo sell-online product- for-you partner empty" 1fr
+    ". company support latest . ." 1fr
+    / 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  background-color: #000000;
+  color: #808080;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.layout a {
+  color: #808080;
+  text-decoration: none;
+}
+.layout a:hover {
+  color: #d3d3d3;
+}
+
+.layout ul {
+  display: flex;
+  flex-direction: column;
+}
+.layout h3 {
+  margin-bottom: 5px;
+}
+.logo {
+  grid-area: 1/1/2/2;
+  align-items: flex-start;
+  color: #d3d3d3;
+}
+.sell-online {
+  grid-area: 1/2/2/3;
+}
+.product- {
+  grid-area: 1/3/2/4;
+}
+.for-you {
+  grid-area: 1/4/2/5;
+}
+.partner {
+  grid-area: 1/5/2/6;
+}
+.empty {
+  grid-area: 1/6/2/7;
+}
+.company {
+  grid-area: 2/2/3/3;
+}
+.support {
+  grid-area: 2/3/3/4;
+}
+.latest {
+  grid-area: 2/4/3/6;
+}
