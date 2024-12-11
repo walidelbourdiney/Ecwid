@@ -926,17 +926,14 @@ body > footer > section.footer-2.flex {
 }
 
 .animation {
-  animation: translateXEffect 2s linear infinite;
+  animation: rotate 0.5s ease-in-out infinite alternate;
 }
 
-@keyframes translateXEffect {
-  0% {
+@keyframes rotate {
+  from {
     transform: translateX(5px);
   }
-  100% {
+  to {
     transform: translateX(-5px);
   }
-}
-footer a:hover {
-  animation: translateXEffect 2s linear infinite;
 }

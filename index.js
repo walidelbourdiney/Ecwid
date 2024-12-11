@@ -57,9 +57,7 @@ firstSectionTitle.addEventListener("click", () => {
   firstSectionTitle.style.color = "blue";
 });
 
-const footerLinks = document.querySelectorAll(
-  "footer > section.layout > div.sell-online > ul > li  a"
-);
+const footerLinks = document.querySelectorAll("footer a");
 footerLinks.forEach((link) => {
   link.addEventListener("mouseenter", () => {
     link.classList.add("animation");
@@ -68,5 +66,3 @@ footerLinks.forEach((link) => {
     link.classList.remove("animation");
   });
 });
-
-console.log(link.classList); // Check if "animation" is added
