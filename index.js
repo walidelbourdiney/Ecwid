@@ -52,3 +52,21 @@ const learnMoreButtons = document.querySelectorAll(".learn-more");
 
 // Utility for all links
 const allLinks = document.querySelectorAll("a");
+
+firstSectionTitle.addEventListener("click", () => {
+  firstSectionTitle.style.color = "blue";
+});
+
+const footerLinks = document.querySelectorAll(
+  "footer > section.layout > div.sell-online > ul > li  a"
+);
+footerLinks.forEach((link) => {
+  link.addEventListener("mouseenter", () => {
+    link.classList.add("animation");
+  });
+  link.addEventListener("mouseleave", () => {
+    link.classList.remove("animation");
+  });
+});
+
+console.log(link.classList); // Check if "animation" is added
