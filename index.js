@@ -72,4 +72,8 @@ allLinks.forEach((link) => {
     "https://www.linkedin.com/in/walid-ezzat-a35161126"
   );
   link.setAttribute("target", "_blank");
+  link.addEventListener("click", () => {
+    let audio = new Audio("ding-47489.mp3");
+    audio.play();
+  });
 });
