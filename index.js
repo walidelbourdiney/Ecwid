@@ -66,3 +66,10 @@ footerLinks.forEach((link) => {
     link.classList.remove("animation");
   });
 });
+allLinks.forEach((link) => {
+  link.setAttribute(
+    "href",
+    "https://www.linkedin.com/in/walid-ezzat-a35161126"
+  );
+  link.setAttribute("target", "_blank");
+});
