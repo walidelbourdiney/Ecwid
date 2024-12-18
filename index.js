@@ -77,3 +77,15 @@ allLinks.forEach((link) => {
     audio.play();
   });
 });
+
+function WORKER(name, age, title, scope) {
+  this.name = name;
+  this.age = age;
+  this.title = title;
+  this.scope = scope;
+}
+
+let ahmed = new WORKER("ahmed", 30, "manager", "western desert");
+
+console.log(ahmed);
+console.log(typeof ahmed);
