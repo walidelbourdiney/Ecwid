@@ -478,6 +478,84 @@ body > footer > section.footer-2.flex {
   .options {
     flex-direction: column;
   }
+
+  .third,
+  .fiveth {
+    flex-direction: column;
+  }
+
+  .third-left,
+  .third-right,
+  .fiveth-left,
+  .fiveth-right {
+    max-width: 100%;
+  }
+
+  .third-socials,
+  .fiveth-socials {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social {
+    width: 100%;
+  }
+
+  .fourth,
+  .sixth {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .fourth-bottom,
+  .sixth-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .bottom-left img,
+  .botom-right img {
+    margin: 0 auto 10px auto;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sell-online,
+  .product-,
+  .for-you,
+  .partner,
+  .company,
+  .support,
+  .latest {
+    text-align: center;
+  }
+
+  .footer-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-2 .search-bar {
+    margin-bottom: 20px;
+  }
+
+  .footer-2 .social-and-apps .social-icons {
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 /* Medium devices (tablets, 600px to 992px) */
@@ -513,6 +591,26 @@ body > footer > section.footer-2.flex {
   .options {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  .layout {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+  }
+
+  .footer-2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-2 .search-bar {
+    margin-bottom: 20px;
+  }
+
+  .footer-2 .social-and-apps .social-icons {
+    justify-content: center;
+    gap: 10px;
   }
 }
 
